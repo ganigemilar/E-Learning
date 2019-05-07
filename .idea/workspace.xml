@@ -133,11 +133,12 @@
       <file leaf-file-name="TrueAndFalse.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/elearning/entity/TrueAndFalse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+            <state relative-caret-position="119">
+              <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
               <folding>
                 <element signature="e#113#114#0" expanded="true" />
                 <element signature="e#144#145#0" expanded="true" />
+                <element signature="e#258#259#0" expanded="true" />
                 <element signature="e#294#295#0" expanded="true" />
                 <element signature="e#349#350#0" expanded="true" />
                 <element signature="e#392#393#0" expanded="true" />
@@ -337,7 +338,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -485,11 +485,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/elearning/entity/TrueAndFalse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+        <state relative-caret-position="119">
+          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
           <folding>
             <element signature="e#113#114#0" expanded="true" />
             <element signature="e#144#145#0" expanded="true" />
+            <element signature="e#258#259#0" expanded="true" />
             <element signature="e#294#295#0" expanded="true" />
             <element signature="e#349#350#0" expanded="true" />
             <element signature="e#392#393#0" expanded="true" />
