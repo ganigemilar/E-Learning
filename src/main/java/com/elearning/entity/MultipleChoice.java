@@ -1,6 +1,5 @@
 package com.elearning.entity;
 
-import java.util.HashMap;
 import java.util.Map;
 
 public class MultipleChoice extends Exam {
@@ -16,21 +15,21 @@ public class MultipleChoice extends Exam {
     }
 
     public static class Option {
-        private String optionPoin;
+        private String optionPoint;
         private String optionDescription;
         private boolean isAnswered;
 
-        public Option(String optionPoin, String optionDescription) {
-            this.optionPoin = optionPoin;
+        public Option(String optionPoint, String optionDescription) {
+            this.optionPoint = optionPoint;
             this.optionDescription = optionDescription;
         }
 
-        public String getOptionPoin() {
-            return optionPoin;
+        public String getOptionPoint() {
+            return optionPoint;
         }
 
-        public void setOptionPoin(String optionPoin) {
-            this.optionPoin = optionPoin;
+        public void setOptionPoint(String optionPoint) {
+            this.optionPoint = optionPoint;
         }
 
         public String getOptionDescription() {
