@@ -4,39 +4,49 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class MultipleChoice extends Exam {
-    private static int totalQuestion = 1;
+    private Map<String, Option> mapOptions;
 
-    private String[] choices;
-    private Map<String, Boolean> choiceAnswered = new HashMap<String, Boolean>();
-
-    {
-        totalQuestion++;
+    public MultipleChoice(String question, Map<String, Option> mapOptions) {
+        super(question);
+        this.mapOptions = mapOptions;
     }
 
-    public MultipleChoice(String question, String[] choices) {
-        super(ExamType.MULTIPLE_CHOICE);
-        setQuestion(question);
-
-        this.choices = choices;
-
-        initExam();
+    public Map<String, Option> getMapOptions() {
+        return mapOptions;
     }
 
-    private void initExam() {
-        for (String choice : choices) {
-            choiceAnswered.put(choice, false);
+    public static class Option {
+        private String optionPoin;
+        private String optionDescription;
+        private boolean isAnswered;
+
+        public Option(String optionPoin, String optionDescription) {
+            this.optionPoin = optionPoin;
+            this.optionDescription = optionDescription;
         }
-    }
 
-    public Map<String, Boolean> getChoiceAnswered() {
-        return choiceAnswered;
-    }
+        public String getOptionPoin() {
+            return optionPoin;
+        }
 
-    public String[] getChoices() {
-        return choices;
-    }
+        public void setOptionPoin(String optionPoin) {
+            this.optionPoin = optionPoin;
+        }
 
-    public static int getTotalQuestion() {
-        return totalQuestion;
+        public String getOptionDescription() {
+            return optionDescription;
+        }
+
+        public void setOptionDescription(String optionDescription) {
+            this.optionDescription = optionDescription;
+        }
+
+        public boolean isAnswered() {
+            return isAnswered;
+        }
+
+        public void setAnswered(boolean answered) {
+            isAnswered = answered;
+        }
     }
 }

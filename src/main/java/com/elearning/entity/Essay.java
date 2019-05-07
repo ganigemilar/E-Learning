@@ -1,12 +1,10 @@
 package com.elearning.entity;
 
 public class Essay extends Exam {
-    private static int totalQuestion = 1;
-
     private String answer;
 
-    public Essay() {
-        super(ExamType.ESSAY);
+    public Essay(String question) {
+        super(question);
     }
 
     public String getAnswer() {

@@ -3,27 +3,17 @@ package com.elearning.entity;
 public abstract class Exam {
     private static int counterNumberExam = 1;
 
-    public enum ExamType {
-        MULTIPLE_CHOICE,
-        ESSAY,
-        TRUE_AND_FALSE
-    }
-
-    private ExamType type;
-    private String question;
     private int questionNumber;
+    private String question;
+    private String answer;
 
     {
         counterNumberExam++;
         questionNumber = counterNumberExam;
     }
 
-    public Exam(ExamType type) {
-        this.type = type;
-    }
-
-    public ExamType getType() {
-        return type;
+    public Exam(String question) {
+        this.question = question;
     }
 
     public int getQuestionNumber() {
@@ -36,5 +26,13 @@ public abstract class Exam {
 
     public void setQuestion(String question) {
         this.question = question;
+    }
+
+    public String getAnswer() {
+        return answer;
+    }
+
+    public void setAnswer(String answer) {
+        this.answer = answer;
     }
 }
