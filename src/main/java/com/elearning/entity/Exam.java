@@ -1,25 +1,14 @@
 package com.elearning.entity;
 
 public abstract class Exam {
-    private static int counterNumberExam = 1;
-
-    private int questionNumber;
     private String question;
     private String answer;
-
-    {
-        counterNumberExam++;
-        questionNumber = counterNumberExam;
-    }
+    private String trueAnswer;
 
     public Exam(String question) {
         this.question = question;
     }
-
-    public int getQuestionNumber() {
-        return questionNumber;
-    }
-
+    
     public String getQuestion() {
         return question;
     }
@@ -34,5 +23,13 @@ public abstract class Exam {
 
     public void setAnswer(String answer) {
         this.answer = answer;
+    }
+
+    public String getTrueAnswer() {
+        return trueAnswer;
+    }
+
+    public void setTrueAnswer(String trueAnswer) {
+        this.trueAnswer = trueAnswer;
     }
 }

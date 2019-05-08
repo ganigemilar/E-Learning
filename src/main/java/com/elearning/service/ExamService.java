@@ -1,4 +1,7 @@
 package com.elearning.service;
 
-public class ExamService {
+public interface ExamService {
+    void onCreateExam(Object... objects);
+
+    void onProcessMarking(Object... objects);
 }
