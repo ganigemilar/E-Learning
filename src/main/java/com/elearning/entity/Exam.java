@@ -3,12 +3,12 @@ package com.elearning.entity;
 public abstract class Exam {
     private String question;
     private String answer;
-    private String trueAnswer;
+    private String questionAnswer;
 
     public Exam(String question) {
         this.question = question;
     }
-    
+
     public String getQuestion() {
         return question;
     }
@@ -25,11 +25,11 @@ public abstract class Exam {
         this.answer = answer;
     }
 
-    public String getTrueAnswer() {
-        return trueAnswer;
+    public String getQuestionAnswer() {
+        return questionAnswer;
     }
 
-    public void setTrueAnswer(String trueAnswer) {
-        this.trueAnswer = trueAnswer;
+    public void setQuestionAnswer(String questionAnswer) {
+        this.questionAnswer = questionAnswer;
     }
 }

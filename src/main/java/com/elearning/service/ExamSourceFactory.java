@@ -1,5 +1,5 @@
 package com.elearning.service;
 
-public class ExamSourceFactory {
-
+public interface ExamSourceFactory {
+    void onProcess(Object... objects);
 }
